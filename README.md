@@ -5,7 +5,7 @@ Uses ```node-fetch``` instead of ```Request``` which has already deprecated.
 
 ## Usage
 ```typescript
-import TwiHi from "./twihi";
+var TwiHi = require("twihi");
 
 let T = new TwiHi({
     consumer_key: "consumer_key",
