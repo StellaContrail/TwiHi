@@ -1,10 +1,10 @@
 {
   "name": "twihi",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Yet another Twitter API library for Node.js",
-  "main": "index.js",
+  "main": "./src/twihi.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "node ./build/test.js",
     "ts-node": "ts-node"
   },
   "repository": {
