@@ -1,6 +1,6 @@
 {
   "name": "twihi",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Yet another Twitter API library for Node.js",
   "main": "index.js",
   "scripts": {
