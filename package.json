@@ -1,0 +1,33 @@
+{
+  "name": "twihi",
+  "version": "1.0.0",
+  "description": "Yet another Twitter API library for Node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "ts-node": "ts-node"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StellaContrail/async-twitter-api.git"
+  },
+  "keywords": [
+    "twitter"
+  ],
+  "author": "Contrail",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/StellaContrail/async-twitter-api/issues"
+  },
+  "homepage": "https://github.com/StellaContrail/async-twitter-api#readme",
+  "dependencies": {
+    "node-fetch": "^2.6.1",
+    "querystring": "^0.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^14.11.2",
+    "dotenv": "^8.2.0",
+    "node-fetch": "^2.6.1",
+    "querystring": "^0.2.0"
+  }
+}

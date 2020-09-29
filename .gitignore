@@ -102,3 +102,12 @@ dist
 
 # TernJS port file
 .tern-port
+
+# Environment Paths
+.env
+
+# Build files
+build/
+
+# Debug file
+src/index.ts
