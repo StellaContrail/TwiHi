@@ -107,7 +107,8 @@ dist
 .env
 
 # Build files
-build/
+#build/
 
 # Debug file
 src/index.ts
+build/index.js
