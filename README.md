@@ -3,6 +3,11 @@ Yet another Async Twitter API library for Typescript/Node.js
 
 Uses ```node-fetch``` instead of ```Request``` which has already deprecated.
 
+## Installing
+```bash
+npm i twihi
+```
+
 ## Usage
 ```typescript
 var TwiHi = require("twihi");
