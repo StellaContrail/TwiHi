@@ -110,5 +110,5 @@ dist
 #build/
 
 # Debug file
-src/index.ts
-build/index.js
+src/test.ts
+build/test.js

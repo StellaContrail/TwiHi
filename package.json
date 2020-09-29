@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/StellaContrail/async-twitter-api.git"
+    "url": "git+git@github.com:StellaContrail/TwiHi.git"
   },
   "keywords": [
     "twitter"
@@ -17,9 +17,9 @@
   "author": "Contrail",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/StellaContrail/async-twitter-api/issues"
+    "url": "https://github.com/StellaContrail/TwiHi/issues"
   },
-  "homepage": "https://github.com/StellaContrail/async-twitter-api#readme",
+  "homepage": "https://github.com/StellaContrail/TwiHi#readme",
   "dependencies": {
     "node-fetch": "^2.6.1",
     "querystring": "^0.2.0"
