@@ -107,7 +107,7 @@ dist
 .env
 
 # Build files
-build/
+#build/
 
 # Debug file
 src/test.ts
