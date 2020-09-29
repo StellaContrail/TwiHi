@@ -83,3 +83,5 @@ export default class TwiHi {
         this.keys.oauth_token_secret = accessToken.oauth_token_secret;
     }
 }
+
+export var __useDefault = true;

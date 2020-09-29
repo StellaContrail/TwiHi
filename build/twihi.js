@@ -3,6 +3,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.__useDefault = void 0;
 const request_1 = require("./request");
 const authorize_1 = __importDefault(require("./authorize"));
 const querystring = require("querystring");
@@ -20,7 +21,7 @@ class TwiHi {
             oauth_token_secret: _keys.oauth_token_secret || ""
         };
     }
-    async get(url, params) {
+    async getREST(url, params) {
         const res = await request_1.request("GET", url, params, this.keys);
         if (res.status) {
             return { data: res.data };
@@ -29,7 +30,7 @@ class TwiHi {
             return JSON.parse(res.data);
         }
     }
-    async post(url, params) {
+    async postREST(url, params) {
         const res = await request_1.request("POST", url, params, this.keys);
         if (res.status) {
             return { data: res.data };
@@ -38,13 +39,13 @@ class TwiHi {
             return JSON.parse(res.data);
         }
     }
-    async getAPI(path, params) {
+    async get(path, params) {
         let _path = TwiHi.formatAPIPath(path);
-        return await this.get(APIBaseURL + _path, params);
+        return await this.getREST(APIBaseURL + _path, params);
     }
-    async postAPI(path, params) {
+    async post(path, params) {
         let _path = TwiHi.formatAPIPath(path);
-        return await this.post(APIBaseURL + _path, params);
+        return await this.postREST(APIBaseURL + _path, params);
     }
     async requestToken(callback) {
         const res = await authorize_1.default.requestToken({ oauth_callback: callback || "oob" }, this.keys);
@@ -78,3 +79,4 @@ class TwiHi {
 }
 exports.default = TwiHi;
 TwiHi.formatAPIPath = (path) => { return path.replace(APIPathRegex, "") + ".json"; };
+exports.__useDefault = true;
